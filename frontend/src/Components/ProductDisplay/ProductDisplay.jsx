@@ -10,8 +10,8 @@ export const ProductDisplay = (props) => {
     <div className='productdisplay'>
         <div className="productdisplay-left">
             <div className="productdisplay-img-list">
-                <img src={props.image} alt="" />
-                <img src={props.image} alt="" />
+                <img src={product.image} alt="" />
+                <img src={product.image} alt="" />
                 <img src={product.image} alt="" />
                 <img src={product.image} alt="" />
             </div>
