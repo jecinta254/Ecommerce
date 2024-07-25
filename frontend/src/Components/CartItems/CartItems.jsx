@@ -22,8 +22,8 @@ export const CartItems = () => {
                 return <div>
             <div className="cartitems-format cartitems-format-main">
                 <img src={e.image} alt="" className='carticon-product-icon' />
-                <p>KSH.{e.name}</p>
-                <p>{e.new_price}</p>
+                <p>{e.name}</p>
+                <p>KSH.{e.new_price}</p>
                 <button className='cartitems-quantity'>{cartItems[e.id]}</button>
                 <p>KSH.{e.new_price*cartItems[e.id]}</p>
                 <img className='cartitems-remove-icon' src={remove_icon} onClick={()=>{removeFromCart(e.id)}} alt="" />
