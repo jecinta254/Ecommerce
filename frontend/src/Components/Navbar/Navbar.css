@@ -8,6 +8,7 @@
     top: 0;
     z-index: 1000;
     background-color: white;
+    align-items: center;
     
 }
 .logo{
@@ -89,6 +90,9 @@
     background: red;
     color: white;
 }
+.nav-dropdown{
+    display: none;
+}
 @media(max-width:1280px){
     .navbar{
         padding: 12px 50px;
@@ -112,7 +116,7 @@
         font-size: 16px;
     }
     .nav-cart-count{
-        margin-left: 40px;
+        margin-left: -40px;
         font-size: 12px;
     }
 }
@@ -133,5 +137,47 @@
     .nav-cart-count{
         margin-left: -40px;
         font-size: 12px;
+    }
+}
+@media(max-width:800px){
+    .navbar{
+        padding: 0px 0px;
+    }
+    .nav-dropdown{
+        display: block;
+        width: 30px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+    .nav-menu{
+        display: none;
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        justify-content: center;
+        top: 50px;
+    }
+    .nav-menu-visible{
+        display: flex;
+    }
+    .nav-dropdown.open{
+        transform: rotate(90deg);
+    }
+}
+@media(max-width:500px){
+    .navbar{
+        width: 8px 0px;
+        gap: 0;
+    }
+    .nav-logo{
+        transform: scale(0.8);
+    }
+    .nav-menu{
+        height: 70px;
+        top: 50px;
+    }
+    .nav-login-cart{
+        transform: scale(0.8);
     }
 }
