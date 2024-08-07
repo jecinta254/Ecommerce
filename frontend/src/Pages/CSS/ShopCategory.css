@@ -6,8 +6,10 @@
     display: block;
     margin: 30px auto;
     width: 82%;
-    
-
+}
+.banners{
+    height: 40vh;
+    width: 100%;
 }
 .shopcategory-indexSort {
     display: flex;
